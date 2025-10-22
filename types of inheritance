@@ -1,0 +1,138 @@
+#include <iostream>
+using namespace std;
+
+// Single Inheritance
+class Animal {
+public:
+    void eat() {
+        cout << "Animal eats food" << endl;
+    }
+};
+
+class Dog : public Animal {
+public:
+    void bark() {
+        cout << "Dog barks" << endl;
+    }
+};
+
+// Multiple Inheritance
+class A {
+public:
+    void displayA() {
+        cout << "Class A" << endl;
+    }
+};
+
+class B {
+public:
+    void displayB() {
+        cout << "Class B" << endl;
+    }
+};
+
+class C : public A, public B {
+public:
+    void displayC() {
+        cout << "Class C (Multiple Inheritance)" << endl;
+    }
+};
+
+// Multilevel Inheritance
+class Grandparent {
+public:
+    void showGrandparent() {
+        cout << "Grandparent class" << endl;
+    }
+};
+
+class Parent : public Grandparent {
+public:
+    void showParent() {
+        cout << "Parent class" << endl;
+    }
+};
+
+class Child : public Parent {
+public:
+    void showChild() {
+        cout << "Child class (Multilevel Inheritance)" << endl;
+    }
+};
+
+// Hierarchical Inheritance
+class Vehicle {
+public:
+    void move() {
+        cout << "Vehicle moves" << endl;
+    }
+};
+
+class Car : public Vehicle {
+public:
+    void drive() {
+        cout << "Car drives" << endl;
+    }
+};
+
+class Bike : public Vehicle {
+public:
+    void ride() {
+        cout << "Bike rides" << endl;
+    }
+};
+
+// Hybrid Inheritance
+class X {
+public:
+    void showX() {
+        cout << "Class X" << endl;
+    }
+};
+
+class Y : virtual public X {
+public:
+    void showY() {
+        cout << "Class Y" << endl;
+    }
+};
+
+class Z : virtual public X {
+public:
+    void showZ() {
+        cout << "Class Z" << endl;
+    }
+};
+
+class Hybrid : public Y, public Z {
+public:
+    void showHybrid() {
+        cout << "Hybrid class (Hybrid Inheritance)" << endl;
+    }
+};
+
+int main() {
+    cout << "--- Single Inheritance ---" << endl;
+    Dog d;
+    d.eat();
+    d.bark();
+
+    cout << "\n--- Multiple Inheritance ---" << endl;
+    C c;
+    c.displayA();
+    c.displayB();
+    c.displayC();
+
+    cout << "\n--- Multilevel Inheritance ---" << endl;
+    Child ch;
+    ch.showGrandparent();
+    ch.showParent();
+    ch.showChild();
+
+    cout << "\n--- Hierarchical Inheritance ---" << endl;
+    Car car;
+    Bike bike;
+    car.move();
+    car.drive();
+    bike.move();
+    bike.ride
