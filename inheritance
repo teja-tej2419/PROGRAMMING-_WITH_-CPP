@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+class vehicle
+public:
+vehicle(){
+Roll No.:
+class car:public vehicle
+cout<<"This is a vehicle"<Kendl;
+public:
+int main()
+{
+car obj;
+return 0
+}
