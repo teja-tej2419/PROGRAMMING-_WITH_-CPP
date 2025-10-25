@@ -1,0 +1,40 @@
+#include<iostream>
+#include<string>
+using namespace std;
+class student {
+private:
+Roll No.:
+Programming with C++ Lab Page No.:
+string studentname;
+int rollnumber;
+float marks;
+public:
+string college;
+void setdetails(){
+cout<<"enter student name: " ;
+cin.ignore();
+getline(cin,studentname);
+cout<<"enter roll number: ";
+cin>>rollnumber;
+cout<<"enter marks(out of 100): ";
+cin>>marks;
+}
+void displaydetails(){
+cout<<"\n---student details---\n";
+cout<<"Name :"<<studentname<<endl;
+cout<<"Rollno :"<<rollnumber<<endl;
+cout<<"Marks :"<<marks<<endl;
+cout<<"College :"<<college<<endl;
+}
+};
+int main()
+{
+student s1;
+cout<<"enter college name: ";
+getline(cin,s1.college);
+s1.setdetails();
+s1.displaydetails();
+s1.college="vignan Univeristy";
+cout<<"\n updated college name : "<<s1.college<<endl;
+return 0;
+}
