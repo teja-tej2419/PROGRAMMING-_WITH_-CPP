@@ -1,0 +1,59 @@
+#include<iostream>
+using namespace std;
+class complex{
+WEEK-6
+private:
+public:
+Roll No.:|
+float real,image;
+ADITY A
+void display(){
+complex(float r-0,float i-0):real(r), image()O
+UNIVERSITY
+Programming with C++ Lab
+cout<<real<<"+"<<image<<"i"<<endl;
+complex operator-(){
+Page No.:
+Date:
+complex operator++(0{
+}
+return complex(-real,-image);
+ttreal;
++timage;
+return *this:
+complex operatort(const complex& obj){
+return complex(realtobj.real,image+obj.image);
+complex operator-(const complex& obj){
+Roll No.:|
+return complex(realobj.real,image-obj.image);
+int main(0{
+complex cl(3,4),c2(1,2).¢3;
+cout<<"original complex numbers:"<<endl;
+,W.N.Ly,ERS ITYcout<<"c1=";cl.display0;
+cout<<"c2=";c2.display0;
+c3=-cl;
+cout<<"nAfter unary - on cl:"<<endl;
+cout<<"c3=";c3.display0;
++tcl;
+cout<<"n After unary ++ on cl:"<<endl;
+cout<<"cl=";cl.display );
+c3=c1+c2;
+Y A
+cout<<"nAfter cl+c2:"<<endl;
+cout<<"c3=";c3.display(
+Output:
+cl=3+4i
+c2=1+2i
+After unary - on cl:
+original complex numbers:
+c3=3+-4i
+After unary ++ on cl:
+cl=4+5i
+After c1tc2:
+c3=5+7i
+After cl-c2:
+c3=c1-c2;
+c3=3+3i
+cout<<"nAfter cl-c2:"<<endl;
+cout<<"c3=";c3.display):
+return 0
