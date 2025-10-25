@@ -1,0 +1,63 @@
+#include<iostream>
+#include<string>
+using namespace std;
+Roll No.:
+Programming with C++ Lab Page No.:
+void printdetails(string name,int rollnumber){
+cout<<"\n Student Details:\n ";
+cout<<"Name: "<<name<<"\n Roll Number: "<<rollnumber<<endl;
+}
+void printdetails(string name, string subject){
+cout<<"\n Teacher Details: ";
+cout<<"Name: "<<name<<"\n subject: "<<subject<<endl;
+}
+void printdetails(string coursename,float duration)
+{
+cout<<"\n Course Details:\n";
+cout<<"Course name: "<<coursename<<"\n duration"<<duration<<"months"<<endl;
+}
+int main()
+{
+int choice;
+cout<<"Select Option:\n";
+cout<<"1. print student details\n";
+cout<<"2. print teacher details\n";
+cout<<"3. print course details\n";
+cout<<"Enter your choice(1-3): ";
+cin>> choice;
+cin.ignore();
+if(choice==1)
+{
+string name;
+int roll;
+cout<<"enter student name: ";
+getline(cin,name);
+cout<<"enter roll no: ";
+cin>>roll;
+printdetails(name,roll);
+}
+else if(choice==2){
+string name,subject;
+cout<<"enter teacher name: ";
+getline(cin,name);
+cout<<"enter subject";
+getline(cin,subject);
+printdetails(name,subject);
+}
+else if(choice==3)
+{
+string course ;
+float duration;
+Roll No.:
+Programming with C++ Lab Page No.:
+cout<<"enter course name: ";
+getline(cin,course);
+cout<<"enter duration (in months)";
+cin>>duration;
+printdetails(course,duration);
+}
+else{
+cout<<"invalid choice!"<<endl;
+}
+return 0;
+}
